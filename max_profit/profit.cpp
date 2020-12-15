@@ -26,9 +26,7 @@ uint32_t get_max_profit(const std::vector<int> &v)
 
 int main()
 {
-    //auto v = {5, 1, 3, 2, 1, 4, 1};
     auto v = {9, 11, 8, 5, 7, 10};
-    //std::vector<int> v = {1};
 
     std::cout << "Max difference : " << get_max_profit(v) << "\n";
     return 0;
