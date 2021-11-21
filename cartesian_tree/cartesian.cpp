@@ -22,7 +22,7 @@ Given a sequence S, construct the corresponding Cartesian tree.
 int main()
 {
         std::vector<int> seq = {3, 2, 6, 1, 9};
-        auto ct = CartesianTree<int>(seq);
+        auto ct = CartesianTreeMaxHeap<int>(seq);
 
         ct.print_sequence();
 

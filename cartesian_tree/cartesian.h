@@ -20,7 +20,7 @@ class CartesianTreeMaxHeap
                 TreeNode *root;
 
                 // Construct a cartesian tree with Max Heap property
-                void _create_cartesian_tree_from_sequence(std::vector<T> seq)
+                void _create_cartesian_tree_from_sequence(std::vector<T> &seq)
                 {
                         for(const auto &item : seq)
                         {
@@ -78,8 +78,8 @@ class CartesianTreeMaxHeap
 
         public:
                 // default constructor currently not supported
-                CartesianTree() = delete;
-                CartesianTree(std::vector<T> &seq) : root(nullptr)
+                CartesianTreeMaxHeap() = delete;
+                CartesianTreeMaxHeap(std::vector<T> &seq) : root(nullptr)
                 {
                         if (seq.size() > 0)
                         {
@@ -87,7 +87,7 @@ class CartesianTreeMaxHeap
                         }
                 }
 
-                ~CartesianTree()
+                ~CartesianTreeMaxHeap()
                 {
                         _delete_all_nodes_post_order(root);
                 }
